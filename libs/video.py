@@ -9,7 +9,7 @@ from config import TEMP
 from libs.exception import VideoIsTooLongException, VideoIsTooBigException
 
 temp = Path(TEMP)
-lib = Path("./lib")
+lib = Path("./libs")
 
 
 class Video:
