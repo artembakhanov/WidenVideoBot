@@ -27,6 +27,12 @@ def doc_video(m):
     send_wide_video(bot, m.chat.id, m.document)
 
 
+@bot.message_handler(commands=['start'])
+def start(m):
+    bot.send_message(m.chat.id,
+                     "Hi! Send me a video or a gif and I will make it wide.\n\nCheck out @br_uh_bot and @bruhimage_bot!")
+
+
 @bot.message_handler()
 def all(m):
     bot.send_message(m.chat.id, "🎞️ Please, send me a video or a gif")
