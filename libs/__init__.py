@@ -24,7 +24,7 @@ def send_wide_video(bot, chat_id, video):
         video.remove_files()
     except VideoException as e:
         bot.send_message(chat_id, e.message)
-    except Exception as e:
-        bot.send_message(chat_id, "😎 You send me something that could break me but I managed to stay alive. Try again")
+    #except Exception as e:
+    #    bot.send_message(chat_id, "😎 You send me something that could break me but I managed to stay alive. Try again")
     finally:
         stop_video(chat_id)
