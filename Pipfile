@@ -7,7 +7,6 @@ verify_ssl = true
 
 [packages]
 cv2 = "*"
-moviepy = "*"
 pytelegrambotapi = "*"
 opencv-python = "*"
 ffmpeg-python = "*"

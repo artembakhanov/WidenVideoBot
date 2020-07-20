@@ -3,7 +3,7 @@ import redis
 from config import REDIS, TIMOUT
 from libs.exception import MoreThanOneVideoException
 
-pool = redis.BlockingConnectionPool(**REDIS, max_connections=1, timeout=5)
+pool = redis.BlockingConnectionPool.from_url(**REDIS, max_connections=1, timeout=5)
 
 
 def start_video(chat_id):
