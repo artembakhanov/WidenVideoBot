@@ -45,11 +45,11 @@ if "webhooks" in list(os.environ.keys()):
     @server.route("/")
     def webhook():
         bot.remove_webhook()
-        bot.set_webhook(url=os.environ["APP_URL"] + TOKEN)
+        bot.set_webhook(url=os.environ["app_url"] + TOKEN)
         return "!", 200
 
 
-    server.run(host="0.0.0.0", port=os.environ.get('PORT', 5000))
+    server.run(host="0.0.0.0", port=os.environ.get('port', 5000))
 
 else:
     bot.remove_webhook()
