@@ -1,0 +1,8 @@
+version: "2"
+services:
+  redis:
+    image: redis
+    mem_limit: 25M
+    container_name: video_queue_bot
+    ports:
+      - "127.0.0.1:6379:6379"
