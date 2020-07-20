@@ -7,7 +7,7 @@ from telebot import TeleBot
 from config import TOKEN
 from libs import send_wide_video
 
-bot = TeleBot("989487441:AAGd2ItaE3RgvRHA2x7ey0vTiB7hVmxgVlw")
+bot = TeleBot(TOKEN)
 
 
 @bot.message_handler(content_types=["video"])
